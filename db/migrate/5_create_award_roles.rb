@@ -5,7 +5,7 @@ class CreateAwardRoles < ActiveRecord::Migration
     # HINT: checkout ActiveRecord::Migration.create_table
     create_table :award_roles do |t|
       t.string :name
-      t.string :year
+      t.integer :year
       t.belongs_to :role
       t.belongs_to :award
     end
